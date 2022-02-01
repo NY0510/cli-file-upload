@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>404 Page Not Found</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet" />
+		<link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			@font-face {
+				font-family: "SBAggroB";
+				src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+				font-weight: normal;
+				font-style: normal;
+			}
+			* {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			html,
+			body {
+				background-color: black;
+				margin: 0;
+				padding: 0;
+			}
+
+			#notfound {
+				position: relative;
+				height: 100vh;
+			}
+
+			#notfound .notfound {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+
+			.notfound {
+				max-width: 440px;
+				width: 100%;
+				text-align: center;
+			}
+
+			.notfound .notfound-404 {
+				height: 280px;
+				position: relative;
+				z-index: -1;
+			}
+
+			.notfound .notfound-404 h1 {
+				font-family: "SBAggroB", sans-serif;
+				font-size: 230px;
+				margin: 0px;
+				font-weight: 900;
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background: url("https://file.ny64.kr/assets/img/bg.jpg") no-repeat;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-position: center;
+				background-size: cover;
+				-webkit-text-stroke: 0.5px #fff;
+			}
+
+			.notfound h2 {
+				font-family: "Montserrat", sans-serif;
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-top: 0;
+			}
+
+			.notfound p {
+				font-family: "Spoqa Han Sans Neo", sans-serif;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 400;
+				margin-bottom: 20px;
+				margin-top: 0px;
+			}
+
+			.notfound a {
+				font-family: "Spoqa Han Sans Neo", sans-serif;
+				font-size: 15px;
+				text-decoration: none;
+				text-transform: uppercase;
+				background: #0046d5;
+				display: inline-block;
+				padding: 15px 30px;
+				border-radius: 40px;
+				color: #fff;
+				font-weight: 400;
+				-webkit-box-shadow: 0px 4px 15px -5px #0046d5;
+				box-shadow: 0px 4px 15px -5px #0046d5;
+			}
+
+			@media only screen and (max-width: 767px) {
+				.notfound .notfound-404 {
+					height: 142px;
+				}
+				.notfound .notfound-404 h1 {
+					font-size: 112px;
+				}
+			}
+
+			/* ddddddddddddd */
+			.pattern {
+				width: 100vw;
+				height: 100vh;
+				background: linear-gradient(to top, #051833 0%, #200533 70%);
+				overflow: hidden;
+			}
+
+			.sparkle {
+				width: 1px;
+				height: 1px;
+				background-color: silver;
+				float: left;
+				transform: rotate(45deg);
+			}
+			.sparkle:nth-child(2n + 0) {
+				-webkit-animation: shine 1.2s linear infinite alternate;
+				animation: shine 1.2s linear infinite alternate;
+				margin: 1.25em;
+			}
+			.sparkle:nth-child(2n + 1) {
+				-webkit-animation: shine 1.2s 0.6s linear infinite alternate;
+				animation: shine 1.2s 0.6s linear infinite alternate;
+			}
+
+			@-webkit-keyframes shine {
+				50% {
+					background-color: rebeccapurple;
+				}
+				100% {
+					background-color: powderblue;
+				}
+			}
+
+			@keyframes shine {
+				50% {
+					background-color: rebeccapurple;
+				}
+				100% {
+					background-color: powderblue;
+				}
+			}
+		</style>
+		<script>
+			window.onload = function () {
+				var p = document.getElementsByClassName("pattern")[0];
+				var size = Math.floor(document.body.clientHeight * 2.6);
+
+				for (let i = 0; i < size; i++) {
+					var newDIV = document.createElement("div");
+					newDIV.setAttribute("class", "sparkle");
+					p.appendChild(newDIV);
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div class="pattern" style="position: absolute"></div>
+		<div id="notfound">
+			<div class="notfound">
+				<div class="notfound-404">
+					<h1>404</h1>
+				</div>
+				<h2>Page not found</h2>
+				<p>요청하신 페이지를 찾을 수 없습니다. <br />주소가 이전 되었거나, 접근 권한이 없어 이러한 문제가 발생 할 수 있습니다.</p>
+				<a href="https://ny64.kr">홈으로 이동</a>
+			</div>
+		</div>
+	</body>
+</html>
