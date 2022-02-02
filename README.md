@@ -22,6 +22,8 @@ BASE_URL='http://localhost' # Base URL of the server
 PORT=3000 # Port to run the server on
 ```
 
+And run the server with the command `npm start`
+
 <br>
 
 ## Upload files using curl
