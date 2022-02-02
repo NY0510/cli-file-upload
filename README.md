@@ -31,13 +31,13 @@ And run the server with the command `npm start`
 ### Windows (PowerShell)
 
 ```bash
-curl /X POST URL_OF_SERVER /F 'file=@FILE_NAME' 'SERVER_URL'
+curl /X POST URL_OF_SERVER /F 'file=@FILE_NAME'
 ```
 
 ### Linux
 
 ```bash
-curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' 'SERVER_URL'
+curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME'
 ```
 
 If you want to **upload multiple files,** you can use `-F file=@FILE_NAME'` or `/F file=@FILE_NAME'` several times.
@@ -53,7 +53,7 @@ If you upload a **secret token** with it **included in the header**, you can sav
 Example:
 
 ```bash
-curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN' 'SERVER_URL'
+curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN'
 ```
 
 <br>
