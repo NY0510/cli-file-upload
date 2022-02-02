@@ -75,8 +75,7 @@ curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN'
 		"fileURL": "http://localhost:3000/files/076df2b8ed466d4c179aedb7724e19721280.ico",
 		"fileSize": 370070,
 		"mimetype": "application/octet-stream"
-	},
-    ...
+	}
 ]
 ```
 
