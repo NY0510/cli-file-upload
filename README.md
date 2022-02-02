@@ -29,13 +29,13 @@ PORT=3000 # Port to run the server on
 ### Windows (PowerShell)
 
 ```bash
-curl /X POST URL_OF_SERVER /F 'file=@FILE_NAME'
+curl /X POST URL_OF_SERVER /F 'file=@FILE_NAME' 'SERVER_URL'
 ```
 
 ### Linux
 
 ```bash
-curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME'
+curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' 'SERVER_URL'
 ```
 
 If you want to **upload multiple files,** you can use `-F file=@FILE_NAME'` or `/F file=@FILE_NAME'` several times.
@@ -51,7 +51,7 @@ If you upload a **secret token** with it **included in the header**, you can sav
 Example:
 
 ```bash
-curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN'
+curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN' 'SERVER_URL'
 ```
 
 <br>
