@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const path = require("path");
+const log4js = require("log4js");
+log4js.configure(path.join(__dirname, "log4js.json")); // log4js setting
 const expressErrorHandler = require("express-error-handler");
 
 // Env Confg Values

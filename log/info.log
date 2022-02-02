@@ -1,0 +1,6 @@
+[2022-02-02T11:40:39.458] [INFO] app - ::ffff:127.0.0.1 POST / Saved file: testfile1.gif to file\60948a85bae1735ad04c994c45786c588a0a.gif with size 965311 bytes
+[2022-02-02T11:40:39.460] [INFO] app - ::ffff:127.0.0.1 POST / Saved file: testfile2.ico to file\884bd74089601891207ee68713a8c799deff.ico with size 370070 bytes
+[2022-02-02T11:40:47.287] [INFO] app - ::ffff:127.0.0.1 POST / Saved file: testfile1.gif to file\87e092cbc8f57ca2501578a201e338e567e8.gif with size 965311 bytes
+[2022-02-02T11:40:47.290] [INFO] app - ::ffff:127.0.0.1 POST / Saved file: testfile2.ico to file\076df2b8ed466d4c179aedb7724e19721280.ico with size 370070 bytes
+[2022-02-02T11:41:29.694] [INFO] app - ::ffff:127.0.0.1 POST / Saved file: testfile1.gif to file\1643769689678_testfile1.gif with size 965311 bytes
+[2022-02-02T11:41:29.697] [INFO] app - ::ffff:127.0.0.1 POST / Saved file: testfile2.ico to file\1643769689689_testfile2.ico with size 370070 bytes
