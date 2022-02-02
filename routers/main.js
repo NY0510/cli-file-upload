@@ -39,7 +39,7 @@ const responseToClient = (req, res, err) => {
 	if (err) {
 		if (err.code === "LIMIT_FILE_SIZE") {
 			logger.info(`${req.headers["x-real-ip"] || req.connection.remoteAddress} ${req.method} ${req.originalUrl} ${err.code}`);
-			return res.json({ statue: "ERROR", message: `File is too big! Upload size limit is ${maxUploadSize}MB` });
+			return res.json({ status: "ERROR", message: `File is too big! Upload size limit is ${maxUploadSize}MB` });
 		}
 	}
 	let jsonData = [];
@@ -47,7 +47,7 @@ const responseToClient = (req, res, err) => {
 		logger.info(
 			`${req.headers["x-real-ip"] || req.connection.remoteAddress} ${req.method} ${req.originalUrl} Saved file: ${value.originalname} to ${value.path} with size ${value.size} bytes`
 		);
-		jsonData.push({ statue: "OK", originalName: value.originalname, fileURL: `${baseURL}/files/${value.filename}`, fileSize: value.size, mimetype: value.mimetype });
+		jsonData.push({ status: "OK", originalName: value.originalname, fileURL: `${baseURL}/files/${value.filename}`, fileSize: value.size, mimetype: value.mimetype });
 	});
 	return res.json(jsonData);
 };

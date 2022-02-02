@@ -63,14 +63,14 @@ curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN'
 ```json
 [
 	{
-		"statue": "OK",
+		"status": "OK",
 		"originalName": "testfile1.gif",
 		"fileURL": "http://localhost:3000/files/87e092cbc8f57ca2501578a201e338e567e8.gif",
 		"fileSize": 965311,
 		"mimetype": "image/gif"
 	},
 	{
-		"statue": "OK",
+		"status": "OK",
 		"originalName": "testfile2.ico",
 		"fileURL": "http://localhost:3000/files/076df2b8ed466d4c179aedb7724e19721280.ico",
 		"fileSize": 370070,
@@ -84,14 +84,14 @@ curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN'
 ```json
 [
 	{
-		"statue": "OK",
+		"status": "OK",
 		"originalName": "testfile1.gif",
 		"fileURL": "http://localhost:3000/files/1643769689678_testfile1.gif",
 		"fileSize": 965311,
 		"mimetype": "image/gif"
 	},
 	{
-		"statue": "OK",
+		"status": "OK",
 		"originalName": "testfile2.ico",
 		"fileURL": "http://localhost:3000/files/1643769689689_testfile2.ico",
 		"fileSize": 370070,
@@ -104,7 +104,7 @@ curl -X POST URL_OF_SERVER -F 'file=@FILE_NAME' -H 'Token: SUPER_SECRET_TOKEN'
 
 ```json
 {
-	"statue": "ERROR",
+	"status": "ERROR",
 	"message": "File is too big! Upload size limit is 1MB"
 }
 ```
